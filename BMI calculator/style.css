@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.calculator:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border: 1px solid #667eea;
+}
+
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5563c1;
+}
+
+.result {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.underweight { background: #ffcccb; color: #b30000; }
+.normal { background: #c8f7c5; color: #2d862d; }
+.overweight { background: #ffe699; color: #996600; }
+.obese { background: #f5b7b1; color: #7b241c; }
